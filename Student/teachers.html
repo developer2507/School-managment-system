@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container-fulid">
+
+        <!-- Modal HTML -->
+        <div id="myModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Teacher info</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="teacher-modal-info-block">
+                            <div>
+                                <div class="d-flex">
+                                    <p>Name:</p>
+                                    <p class="text-secondary p-l-7">Ramil Bayramov</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Degree:</p>
+                                    <p class="text-secondary p-l-7">Bachelor</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Experience:</p>
+                                    <p class="text-secondary p-l-7">2 years</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Phone:</p>
+                                    <p class="text-secondary p-l-7">+86 123 4567 8912</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>E-mail:</p>
+                                    <p class="text-secondary p-l-7">ramil.bayramov@gmail.com</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex">
+                                    <p>Gender:</p>
+                                    <p class="text-secondary p-l-7">Male</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Birthday:</p>
+                                    <p class="text-secondary p-l-7">01.01.1999</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>University:</p>
+                                    <p class="text-secondary p-l-7">Anhui university</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Ocupation:</p>
+                                    <p class="text-secondary p-l-7">English Teacher</p>
+                                </div>
+                                <div class="d-flex">
+                                    <p>Nationality:</p>
+                                    <p class="text-secondary p-l-7">Russian</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END OF MODAL -->
+
+        <!-- HEADER SECTION -->
+        <header class="fixed-top">
+            <div class="row">
+                <div class="header ">
+                    <div class="col-md-12 d-flex m-t-b-10px align-items-center justify-content-between ">
+                        <button class="burger-btn"><i class="menu-icon open-menu fa-solid fa-bars"></i><i class="menu-icon close-menu fa-solid fa-xmark"></i></button>
+                        <div class="user-panel">
+                            <a href="messages.html"><img class="message-icon" src="icons/meassage.svg" ><span class="notification">0</span></a>
+                            <img class="user-icon" src="icons/user.svg" >
+                            <p class="user-name">Ramil Bayramov<i class="fa-solid arrow-down open-settings fa-angle-down"></i><i class="fa-solid close-settings arrow-down fa-angle-up"></i></p>
+
+                            <!-- SETTINGS PANEL -->
+                            <div class="settings">
+                                <span class="hover-arrow"></span>
+                                <div class="sttings-block">
+                                    <a class="setting-icons my-account d-flex" href="#"><i class="account-icon fa-solid fa-user"></i><p>My Account</p></a>
+                                    <form action="#" class="setting-icons">
+                                        <button class="logout d-flex" type="submit"><i class="logout-icon fa-solid fa-arrow-right-from-bracket"></i><p>Logout</p></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- END OF SETTING PANEL -->
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </header>
+        <!-- END OF HEADER SECTION -->
+
+        <!-- MAIN SECTION -->
+
+        <section class="m-t-65">
+            <!-- NAVIGATION BAR -->
+          <div class="d-flex">
+            <div class="menu ">
+              <ul class="menu-nav">
+                  <a href="index.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-house"></i><p class="menu-nav-list">Dashboard</p></li></a>
+                  <a href="messages.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-message"></i><p class="menu-nav-list">Messages</p></li></a>
+                  <a href="teachers.html"><li class="list-block active  d-flex"><i class="menu-icons over-position fa-solid fa-person-chalkboard"></i><p class="menu-nav-list">Teachers</p></li></a>
+                  <a href="academic.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-book-open-reader"></i><p class="menu-nav-list">Academic</p></li></a>
+                  <a href="homework.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-file-pen"></i><p class="menu-nav-list">Homework</p></li></a>
+                  <a href="library.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-book"></i><p class="menu-nav-list">Library</p></li></a>
+                  <a href="calendar.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-calendar"></i><p class="menu-nav-list">Calendar</p></li></a>
+              </ul>
+            </div>
+            <!-- END OF NAVIGATION BAR -->
+
+            <!-- MAIN CONTENT -->
+            
+            
+            <div>
+                <!-- TITLE BLOCK -->
+                <div>
+                    <img src="img/header-title-img.jpg" class="header-title-img" >
+                    <div class="teachers-title-group d-flex align-items-center">
+                        <img src="img/title-img.svg" class="title-img">
+                        <h2 class="page-title">Teachers</h2>
+                    </div>
+                </div>
+                <!-- END OF TITLE BLOCK -->
+
+                <!-- CARD BLOCK -->
+                
+                <div class="container down-position p-t-40">
+                    <div class="row">
+                        <!-- TEACHER INFO CARD -->
+                        <div class="col-md-4 ">
+                            <div class="d-flex justify-content-center p-r-90-add">
+                                <div  data-id="0" class="teacher-card teacherModal shadow-custom">
+                                    <div class="d-flex p-t-b-15">
+                                        <div><img class="teacher-img" src="img/user.svg" ></div>
+                                        <div class="teacher-min-info-group">
+                                            <p class="teacher-name">Ramil</p>
+                                            <p class="teacher-phone">+86 123 4567 8912</p>
+                                            <p class="teacher-email">ramil.bayramov@...</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END OF TEACHER INFO CARD -->
+                        <div class="col-md-4 ">
+                            <div class="d-flex justify-content-center p-r-90-add">
+                                <div  data-id="0" class="teacher-card teacherModal shadow-custom">
+                                    <div class="d-flex p-t-b-15">
+                                        <div><img class="teacher-img" src="img/user.svg" ></div>
+                                        <div class="teacher-min-info-group">
+                                            <p class="teacher-name">Ramil</p>
+                                            <p class="teacher-phone">+86 123 4567 8912</p>
+                                            <p class="teacher-email">ramil.bayramov@...</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="d-flex justify-content-center p-r-90-add">
+                                <div  data-id="0" class="teacher-card teacherModal shadow-custom">
+                                    <div class="d-flex p-t-b-15">
+                                        <div><img class="teacher-img" src="img/user.svg" ></div>
+                                        <div class="teacher-min-info-group">
+                                            <p class="teacher-name">Ramil</p>
+                                            <p class="teacher-phone">+86 123 4567 8912</p>
+                                            <p class="teacher-email">ramil.bayramov@...</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ">
+                            <div class="d-flex justify-content-center p-r-90-add">
+                                <div  data-id="0" class="teacher-card teacherModal shadow-custom">
+                                    <div class="d-flex p-t-b-15">
+                                        <div><img class="teacher-img" src="img/user.svg" ></div>
+                                        <div class="teacher-min-info-group">
+                                            <p class="teacher-name">Ramil</p>
+                                            <p class="teacher-phone">+86 123 4567 8912</p>
+                                            <p class="teacher-email">ramil.bayramov@...</p>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CARD BLOCK -->
+            </div>
+
+        </section>
+    </div>
+
+
+    <!-- JS FILES -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container-fulid">
+        <!-- HEADER SECTION -->
+        <header class="fixed-top">
+            <div class="row">
+                <div class="header ">
+                    <div class="col-md-12 d-flex m-t-b-10px align-items-center justify-content-between ">
+                        <button class="burger-btn"><i class="menu-icon open-menu fa-solid fa-bars"></i><i class="menu-icon close-menu fa-solid fa-xmark"></i></button>
+                        <div class="user-panel">
+                            <a href="messages.html"><img class="message-icon" src="icons/meassage.svg" ><span class="notification">0</span></a>
+                            <img class="user-icon" src="icons/user.svg" >
+                            <p class="user-name">Ramil Bayramov<i class="fa-solid arrow-down open-settings fa-angle-down"></i><i class="fa-solid close-settings arrow-down fa-angle-up"></i></p>
+
+                            <!-- SETTINGS PANEL -->
+                            <div class="settings">
+                                <span class="hover-arrow"></span>
+                                <div class="sttings-block">
+                                    <a class="setting-icons my-account d-flex" href="#"><i class="account-icon fa-solid fa-user"></i><p>My Account</p></a>
+                                    <form action="#" class="setting-icons">
+                                        <button class="logout d-flex" type="submit"><i class="logout-icon fa-solid fa-arrow-right-from-bracket"></i><p>Logout</p></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- END OF SETTING PANEL -->
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </header>
+        <!-- END OF HEADER SECTION -->
+
+        <!-- MAIN SECTION -->
+
+        <section class="m-t-65">
+            <!-- NAVIGATION BAR -->
+          <div class="d-flex">
+            <div class="menu ">
+              <ul class="menu-nav">
+                  <a href="index.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-house"></i><p class="menu-nav-list">Dashboard</p></li></a>
+                  <a href="messages.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-message"></i><p class="menu-nav-list">Messages</p></li></a>
+                  <a href="teachers.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-person-chalkboard"></i><p class="menu-nav-list">Teachers</p></li></a>
+                  <a href="academic.html"><li class="list-block active d-flex"><i class="menu-icons over-position fa-solid fa-book-open-reader"></i><p class="menu-nav-list">Academic</p></li></a>
+                  <a href="homework.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-file-pen"></i><p class="menu-nav-list">Homework</p></li></a>
+                  <a href="library.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-book"></i><p class="menu-nav-list">Library</p></li></a>
+                  <a href="calendar.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-calendar"></i><p class="menu-nav-list">Calendar</p></li></a>
+              </ul>
+            </div>
+            <!-- END OF NAVIGATION BAR -->
+
+            <!-- MAIN CONTENT -->
+            <div>
+                <!-- TITLE BLOCK -->
+                <div>
+                    <img src="img/header-title-img.jpg" class="header-title-img" >
+                    <div class="teachers-title-group d-flex align-items-center">
+                        <img src="img/title-img.svg" class="title-img">
+                        <h2 class="page-title">Academic</h2>
+                    </div>
+                </div>
+                <!-- END OF TITLE BLOCK -->
+
+                <div class="container down-position p-t-40">
+                    <div class="row">
+                        <div class="col-md-12  p-r-100-add">
+                            <div class="d-flex justify-content-center">
+                                <div class="d-flex academic-tabs academic-tabs-scroll">
+                                    <div tab="Attendance" class="d-flex align-items-center justify-content-center active-academic academic-attendance">
+                                        <i class="fa-solid fa-person-chalkboard attendance-icons color-43 p-r-10"></i>
+                                        <p class="m-0" >Attendance</p>
+                                    </div>
+                                    <div tab="Marks" class="d-flex align-items-center justify-content-center  academic-marks">
+                                        <i class="fa-solid fa-book-open attendance-icons color-43 p-r-10"></i>
+                                        <p class="m-0">Marks</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ATTENDANCE BLOCK -->
+
+                            <div id="attendance">
+                                <div class="d-flex justify-content-end">
+                                    <div class="d-flex m-t-35">
+                                        <input type="date" class="form-control date-size attendance-date m-r-10"  name="" id="">
+                                        <button class="btn btn-danger" id="searchAttendanceDate">OK</button>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <div class="add-scroll">
+                                        <div class="table-outlines">
+                                            <table class="table table-sm table-bordered m-t-17">
+                                                <thead>
+                                                  <tr class="text-center">
+                                                    <th scope="col">Name</th>
+                                                    <th scope="col">08.01.2022</th>
+                                                    <th scope="col">08.01.2022</th>
+                                                    <th scope="col">08.01.2022</th>
+                                                    <th scope="col">08.01.2022</th>
+                                                    <th scope="col">08.01.2022</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69">Mark</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69">Jacob</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-absent font-w-600 ">A</p><p class="m-0 font-w-600 current-mark ">0</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >Larry the Bird</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-absent font-w-600 ">A</p><p class="m-0 font-w-600 current-mark ">0</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >Ramil</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >Anar</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >John</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-absent font-w-600 ">A</p><p class="m-0 font-w-600 current-mark ">0</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >Jack</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">8</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">8</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">7</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >Mery</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                  <tr class="text-center">
+                                                    <td class="w-25 color-69" >Susan</td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-absent font-w-600 ">A</p><p class="m-0 font-w-600 current-mark ">0</p></div></td>
+                                                    <td><div class="d-flex justify-content-around"><p class="m-0 current-attendance-present font-w-600 ">P</p><p class="m-0 font-w-600 current-mark ">10</p></div></td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center" style="margin: 20px 0;">
+                                        <button class="btn btn-secondary"><i class="fa-solid fa-arrow-left" width="16" height="16"></i></button>
+                                        <button class="btn btn-secondary" style="margin-left: 30px;"><i class="fa-solid fa-arrow-right" width="16" height="16"></i></button>
+                                    </div>                                    
+                                </div>
+                            </div>
+
+                            <!-- Add Attendance Modal HTML -->
+
+                            <div id="addAttendanceModal" class="modal fade" >
+                              <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                  
+                                    <div class="modal-header">						
+                                      <h4 class="modal-title">Check Attendance</h4>
+                                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                      
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">Ramil</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-present font-w-600 ">P</p>
+                                            <p class="m-0 font-w-600 current-mark ">10</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">Mark</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-present font-w-600 ">P</p>
+                                            <p class="m-0 font-w-600 current-mark ">10</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">Anar</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-present font-w-600 ">P</p>
+                                            <p class="m-0 font-w-600 current-mark ">10</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">Jack</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-absent font-w-600 ">A</p>
+                                            <p class="m-0 font-w-600 current-mark ">0</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">John</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-present font-w-600 ">P</p>
+                                            <p class="m-0 font-w-600 current-mark ">10</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">Mery</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-absent font-w-600 ">A</p>
+                                            <p class="m-0 font-w-600 current-mark ">0</p>
+                                        </div>
+                                      </div>
+
+                                      <div class="form-group d-flex justify-content-between align-items-center m-t-10">
+                                        <label class="width-100 fw-bolder">Susan</label>
+                                        <div class="d-flex justify-content-around" style="width: 120px;">
+                                            <p class="m-0 current-attendance-present font-w-600 ">P</p>
+                                            <p class="m-0 font-w-600 current-mark ">10</p>
+                                        </div>
+                                      </div>
+                                      
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
+                                    </div>
+                                  
+                                </div>
+                              </div>
+                            </div>
+
+                              <!-- Edit Modal HTML -->
+
+                            <!-- END OF ATTENDANCE BLOCK -->
+
+                            <!-- MARKS BLOCK -->
+                            <div id="marks">
+                                <div class="d-flex justify-content-end">
+                                    <div class="d-flex m-t-35">
+                                      <input type="date" class="form-control m-r-10 date-size attendance-date" name="" id="homeworkDate">
+                                      <button class="btn btn-danger" id="searchHomework">OK</button>
+                                    </div>
+                                </div>
+
+                                <div class="add-scroll m-t-17">
+                                    <div class="table-outlines">
+                                      <table class="table table-sm table-bordered">
+                                        <thead>
+                                          <tr class="text-center">
+                                            <th scope="col">#</th>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Redirect</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">1</th>
+                                            <td class="w-25 color-69">12.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">2</th>
+                                            <td class="w-25 color-69">15.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">3</th>
+                                            <td class="w-25 color-69">17.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">4</th>
+                                            <td class="w-25 color-69">12.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">5</th>
+                                            <td class="w-25 color-69">15.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">6</th>
+                                            <td class="w-25 color-69">17.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="w-25" scope="row">7</th>
+                                            <td class="w-25 color-69">17.03.2022</td>
+                                            <td class="w-25 "><a class="text-decoration-none" href="marks.html">View</a></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                      
+                                </div>
+                                <div class="d-flex justify-content-center" style="margin: 20px 0;">
+                                  <button class="btn btn-secondary"><i class="fa-solid fa-arrow-left" width="16" height="16"></i></button>
+                                  <button class="btn btn-secondary" style="margin-left: 30px;"><i class="fa-solid fa-arrow-right" width="16" height="16"></i></button>
+                                </div>
+                            </div>
+                            <!-- END OF MARKS BLOCK -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!-- JS FILES -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    <script>
+
+    $(document).ready(function(){
+      $('#searchAttendanceDate').click(function(){
+        $('#addAttendanceModal').modal('show');
+      });
+    });
+
+    </script>
+    
+</body>
+</html>

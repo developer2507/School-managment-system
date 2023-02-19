@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, height=device-height">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <div class="container-fulid">
+        <!-- HEADER SECTION -->
+        <header class="fixed-top">
+            <div class="row">
+                <div class="header ">
+                    <div class="col-md-12 d-flex m-t-b-10px align-items-center justify-content-between ">
+                        <button class="burger-btn"><i class="menu-icon open-menu fa-solid fa-bars"></i><i class="menu-icon close-menu fa-solid fa-xmark"></i></button>
+                        <div class="user-panel">
+                            <a href="messages.html"><img class="message-icon" src="icons/meassage.svg" ><span class="notification">0</span></a>
+                            <img class="user-icon" src="icons/user.svg" >
+                            <p class="user-name">Ramil Bayramov<i class="fa-solid arrow-down open-settings fa-angle-down"></i><i class="fa-solid close-settings arrow-down fa-angle-up"></i></p>
+
+                            <!-- SETTINGS PANEL -->
+                            <div class="settings">
+                                <span class="hover-arrow"></span>
+                                <div class="sttings-block">
+                                    <a class="setting-icons my-account d-flex" href="#"><i class="account-icon fa-solid fa-user"></i><p>My Account</p></a>
+                                    <form action="#" class="setting-icons">
+                                        <button class="logout d-flex" type="submit"><i class="logout-icon fa-solid fa-arrow-right-from-bracket"></i><p>Logout</p></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- END OF SETTING PANEL -->
+                        </div>
+                    </div>       
+                </div>
+            </div>
+        </header>
+        <!-- END OF HEADER SECTION -->
+
+        <!-- MAIN SECTION -->
+
+        <section class="m-t-65">
+            <!-- NAVIGATION BAR -->
+          <div class="d-flex">
+            <div class="menu ">
+              <ul class="menu-nav">
+                  <a href="index.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-house"></i><p class="menu-nav-list">Dashboard</p></li></a>
+                  <a href="messages.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-message"></i><p class="menu-nav-list">Messages</p></li></a>
+                  <a href="teachers.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-person-chalkboard"></i><p class="menu-nav-list">Teachers</p></li></a>
+                  <a href="academic.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-book-open-reader"></i><p class="menu-nav-list">Academic</p></li></a>
+                  <a href="homework.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-file-pen"></i><p class="menu-nav-list">Homework</p></li></a>
+                  <a href="library.html"><li class="list-block list-block-hover d-flex"><i class="menu-icons over-position fa-solid fa-book"></i><p class="menu-nav-list">Library</p></li></a>
+                  <a href="calendar.html"><li class="list-block active d-flex"><i class="menu-icons over-position fa-solid fa-calendar"></i><p class="menu-nav-list">Calendar</p></li></a>
+              </ul>
+            </div>
+            <!-- END OF NAVIGATION BAR -->
+
+            <!-- MAIN CONTENT -->
+            <div>
+                <!-- TITLE BLOCK -->
+                <div>
+                    <img src="img/header-title-img.jpg" class="header-title-img" >
+                    <div class="teachers-title-group d-flex align-items-center">
+                        <img src="img/title-img.svg" class="title-img">
+                        <h2 class="page-title">Calendar</h2>
+                    </div>
+                </div>
+                <!-- END OF TITLE BLOCK -->
+
+                <!-- CALENDAR BLOCK -->
+                <div class="container down-position p-t-40">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <div class="table-block">
+                                <div class="add-scroll">
+                                    <table class="table table-sm table-bordered">
+                                        <tbody>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Monday</p></th>
+                                            <td class="day-data-block"><p style="font-weight: bold;">10:30-11:30</p></td>        
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Tuesday</p></th>
+                                            <td class="day-data-block"><p>no lesson</p></td>                                            
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Wednesday</p></th>
+                                            <td class="day-data-block" ><p style="font-weight: bold;">10:30-11:30 </p></td>                        
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Thursday</p></th>
+                                            <td class="day-data-block" ><p>no lesson</p></td>                        
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Friday</p></th>
+                                            <td class="day-data-block" ><p style="font-weight: bold;">12:00-13:30</p></td>                        
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Saturday</p></th>
+                                            <td class="day-data-block" ><p>no lesson</p></td>                        
+                                          </tr>
+                                          <tr class="text-center">
+                                            <th class="day-block" scope="row"><p>Sunday</p></th>
+                                            <td class="day-data-block" ><p>no lesson</p></td>                        
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END OF CALENDAR BLOCK -->
+            </div>
+        </section>
+    </div>
+
+
+    <!-- JS FILES -->
+
+    <script src="js/all.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/main.js"></script>
+    
+    
+</body>
+</html>
