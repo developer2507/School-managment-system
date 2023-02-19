@@ -4,7 +4,7 @@ Web app for managing student
 
 ## Available Link For View Website
 
-Click:school-managment-system-anar.netlify.app
+Click: https://school-managment-system-anar.netlify.app/
 
 ## Stack
 
